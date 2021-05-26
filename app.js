@@ -50,6 +50,7 @@ submit.addEventListener("click", apMaxTempFunc);
 
 let reset = document.getElementById("resetBtn")
 
+
 reset.addEventListener("click", resetFunc);
 // wind boxes
 
@@ -113,6 +114,7 @@ function wtWindFunc(){
         wtWind.style.backgroundColor = "green"
         wtWind.innerText ="Wind -rotors can be engaged"
     }
+    container.scrollIntoView()
 }
 
 function wtCloudFunc(){
@@ -460,6 +462,8 @@ function jetMaxTempFunc(){
 
 
 let container = document.querySelector(".container")
+let listOfDivs = document.querySelectorAll(".container > div")
+console.log(listOfDivs)
 
 function resetFunc(){
     wind.value = "";
@@ -469,5 +473,9 @@ function resetFunc(){
     minTemp.value = "";
     maxTemp.value = "";
     container.style.backgroundColor = "white";
+    listOfDivs.forEach((div)=>{
+        div.style.backgroundColor = "white"
+        div.innerHTML = ""
+    })
 
 }

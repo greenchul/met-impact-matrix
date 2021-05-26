@@ -112,7 +112,7 @@ a:visited{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr;
 
 }
 
@@ -134,4 +134,10 @@ a:visited{
 
 .head{
     height: 2rem;
+    
+}
+
+.headings{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
