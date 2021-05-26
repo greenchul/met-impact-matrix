@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+
+header {
+    background-color: aquamarine;
+    height: 30vh;
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(170, 165, 165, 0.514), rgba(154, 157, 172, 0.507)) ,url("https://images.unsplash.com/photo-1498496294664-d9372eb521f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    letter-spacing: 0.7rem;
+    margin: auto;
+    
+}
+
+.form {
+    border: .2rem solid black;
+    border-radius: .1rem;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    padding: .1rem;
+    letter-spacing: .1rem;
+    font-size: 2.5rem;
+    top: .6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr;
+
+    
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+}
+
+.time1 {
+    margin: auto;
+    position: relative;
+}
+
+button {
+    border-radius: 1rem;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    padding: .8rem;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: translateY(-1.5px);
+}
+
+button:focus {
+    outline: none;
+}
+
+#submitBtn{
+    width: 50%;
+    margin: auto;
+}
+
+#resetBtn{
+    width: 50%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+.matrix {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    top: 100px;
+    font-size: 2rem;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.container > div {
+    border: .2rem solid black;
+    border-radius: .5rem;
+    height: 12rem;
+}
+
+.colour {
+    background-color: cadetblue;
+}

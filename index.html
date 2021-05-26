@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Met Impact matrix</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/a3249904fb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+            <header>
+                <div class="title">Automated Met Impact matrix</div>
+            </header>
+            <br>
+            <br>
+            <div class="form">
+                <div class="inputs">
+                    <label>Wind speed</label>
+                    <input type="text" id="wind" placeholder="kt">
+                </div>
+                <div class="inputs">
+                    <label>Lowest cloud base</label>
+                    <input type="text" id="cloud" placeholder="ft (3/8)">
+                </div>
+                <div class="inputs">
+                    <label>Visibility</label>
+                    <input type="text" id="vis" placeholder="m">    
+                </div>
+                <div class="inputs">
+                    <label>Sea state</label>
+                    <input type="text" id="seaState">
+                </div>
+                <div class="inputs">
+                    <label>Min temp</label>
+                    <input type="text" id="minTemp" placeholder="Deg C">
+                </div>
+                <div class="inputs">
+                    <label>Max temp</label>
+                    <input type="text" id="maxTemp" placeholder="Deg C">
+                </div>
+        
+                <button id="submitBtn">Submit <i class="fas fa-bolt"></i> </button>
+                <button id="resetBtn">Reset <i class="fas fa-redo"></i></button>
+            </div>
+        
+        
+        <br>
+        
+        <br>
+
+        <div class="matrix" id="matrix">
+            <div class="container">
+                <div><strong>Wildcat</strong></div>
+                <div><strong>Merlin</strong></div>
+                <div><strong>Apache</strong></div>
+                <div><strong>Grob</strong></div>
+                <div><strong>F-35B</strong></div>
+                <div id="wtWind">Wind speed</div>
+                <div id="meWind">Wind speed</div>
+                <div id="apWind">Wind speed</div>
+                <div id="grWind">Wind speed</div>
+                <div id="jetWind">Wind speed</div>
+                <div id="wtCloud">Cloud base</div>
+                <div id="meCloud">Cloud base</div>
+                <div id="apCloud">Cloud base</div>
+                <div id="grCloud">Cloud base</div>
+                <div id="jetCloud">Cloud base</div>
+                <div id="wtVis">Visibility</div>
+                <div id="meVis">Visibility</div>
+                <div id="apVis">Visibility</div>
+                <div id="grVis">Visibility</div>
+                <div id="jetVis">Visibility</div>
+                <div id="wtSeaState">Sea state</div>
+                <div id="meSeaState">Sea state</div>
+                <div id="apSeaState">Sea state</div>
+                <div id="grSeaState">Sea state</div>
+                <div id="jetSeaState">Sea state</div>
+                <div id="wtMin">Min temp</div>
+                <div id="meMin">Min temp</div>
+                <div id="apMin">Min temp</div>
+                <div id="grMin">Min temp</div>
+                <div id="jetMin">Min temp</div>
+                <div id="wtMax">Max temp</div>
+                <div id="meMax">Max temp</div>
+                <div id="apMax">Max temp</div>
+                <div id="grMax">Max temp</div>
+                <div id="jetMax">Max temp</div>
+                
+                
+
+            </div>
+
+        </div>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
